@@ -28,7 +28,7 @@ That's it! Your agent is ready to handle this complex and ambiguous security wor
 
 ## Real-World Examples
 
-This repository includes four working examples that demonstrate the framework's capabilities. It utilizes multiple 3rd party MCP servers including [Panther Security Monitoring](https://github.com/panther-labs/mcp-panther), [virustotal](https://github.com/BurtTheCoder/mcp-virustotal), [Github](https://github.com/github/github-mcp-server), [Linear](https://linear.app/changelog/2025-05-01-mcp), and [Slack](https://github.com/modelcontextprotocol/servers-archived/tree/main/src/slack) MCP servers.
+This repository includes four working examples that demonstrate the framework's capabilities. It utilizes multiple 3rd party MCP servers including [Panther Security Monitoring](https://github.com/panther-labs/mcp-panther), [VirusTotal](https://github.com/BurtTheCoder/mcp-virustotal), [Github](https://github.com/github/github-mcp-server), [Linear](https://linear.app/changelog/2025-05-01-mcp), and [Slack](https://github.com/modelcontextprotocol/servers-archived/tree/main/src/slack) MCP servers.
 
 While these examples are cybersecurity focused, this framework can be used to build agents for any team such as those in product engineering or customer support.
 
