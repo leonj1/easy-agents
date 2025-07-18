@@ -6,7 +6,22 @@ from apscheduler.triggers.cron import CronTrigger
 from contextlib import asynccontextmanager
 from utils.cron import cron, cron_jobs
 
-app = FastAPI()  # for webhook triggers
+
+# This is a FastAPI lifecycle manager that starts the cron job scheduler when the app starts
+# and stops it when the app stops
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Register all decorated cron jobs
+    for func, trigger in cron_jobs:
+        scheduler.add_job(func, trigger)
+
+    scheduler.start()
+
+    yield
+    scheduler.shutdown()
+
+
+app = FastAPI(lifespan=lifespan)  # for webhook triggers
 scheduler = AsyncIOScheduler()  # for cron job triggers
 
 
@@ -123,20 +138,3 @@ async def weekly_update_agent(team_name: str = "SEC"):
     )
     asyncio.create_task(agent.run())
     return {"status": "task started"}
-
-
-# This is a FastAPI lifecycle manager that starts the cron job scheduler when the app starts
-# and stops it when the app stops
-@asynccontextmanager
-async def lifespan(app: FastAPI):
-    # Register all decorated cron jobs
-    for func, trigger in cron_jobs:
-        scheduler.add_job(func, trigger)
-
-    scheduler.start()
-
-    yield
-    scheduler.shutdown()
-
-
-app = FastAPI(lifespan=lifespan)
