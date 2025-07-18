@@ -32,16 +32,16 @@ This repository includes four working examples that demonstrate the framework's 
 
 While these examples are cybersecurity focused, this framework can be used to build agents for any team such as those in product engineering or customer support.
 
-### [Security Alert Investigator Agent](main.py#L15-L40)
+### [Security Alert Investigator Agent](main.py#L28-L53)
 This agent triages incoming security alerts by correlating events across multiple sources, assessing risk levels, and routing to appropriate teams. The agent reads the alert context, investigates related events, and makes intelligent decisions about severity and response.
 
-### [Application Security Agent](main.py#L42-L71)
+### [Application Security Agent](main.py#L56-L85)
 This agent reviews GitHub Advanced Security code-scanning alerts and automatically creates fix PRs for valid issues. It even runs tests and linters to ensure all tests pass, and assigns the right reviewers to the PR. 
 
-### [Supply Chain Security Agent](main.py#L73-L103)
+### [Supply Chain Security Agent](main.py#L88-L118)
 This agent triages Github Dependabot alerts by evaluating vulnerability impact, updating packages to secure versions, ensuring tests pass, and managing the entire pull request workflow.
 
-### [Weekly Summary Agent](main.py#L105-L124)
+### [Weekly Summary Agent](main.py#L121-L140)
 Every Sunday, this agent reviews Linear tickets and projects for their team. It writes a report on current projects, what got done that week and by whom.  
 
 ## Why This Approach Works
