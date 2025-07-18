@@ -77,19 +77,13 @@ uv sync
 uv run fastapi dev main.py
 ```
 
-### Configuration
-
-1. Add the environment variables to [`.env`](.env.example) for the services your agents will use (Slack, GitHub, etc.) 
-2. Configure your MCP servers in [`agent.py`](agent.py) or build your own MCP server in [`mcps/`](mcps/)
-3. Deploy your agents using the provided FastAPI endpoints or cronjob triggers
-
 ### Creating Custom Agents
 
 Creating a new agent is as simple as:
 
 1. Define your agent's behavior in natural language
-2. Specify the MCP tools it needs access to
-3. Deploy via the API
+2. Specify the MCP servers it needs access to
+3. Deploy via the provided FastAPI endpoints or cronjob triggers
 
 ### Creating Custom MCP Servers
 
