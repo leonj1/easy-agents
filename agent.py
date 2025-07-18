@@ -62,6 +62,13 @@ mcp_config = {
             "command": "npx",
             "args": ["-y", "mcp-remote", "https://mcp.linear.app/sse"],
         },
+        "virustotal": {
+            "command": "npx",
+            "args": ["@burtthecoder/mcp-virustotal"],
+            "env": {
+                "VIRUSTOTAL_API_KEY": os.getenv("VIRUSTOTAL_API_KEY"),
+            },
+        },
     }
 }
 

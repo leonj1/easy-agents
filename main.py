@@ -46,7 +46,7 @@ async def security_alert_agent(alert_id: str):
         description="Agent for handling security alerts from our SIEM",
         system_prompt=system_prompt,
         prompt=f"security alert ID: {alert_id}",
-        mcp_servers=["panther", "slack"],
+        mcp_servers=["panther", "virustotal", "slack"],
     )
 
     asyncio.create_task(agent.run())

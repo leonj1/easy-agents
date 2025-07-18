@@ -28,7 +28,7 @@ That's it! Your agent is ready to handle this complex and ambiguous security wor
 
 ## Real-World Examples
 
-This repository includes four working examples that demonstrate the framework's capabilities. It utilizes multiple 3rd party MCP servers including [Panther Security Monitoring](https://github.com/panther-labs/mcp-panther), [Github](https://github.com/github/github-mcp-server), [Linear](https://linear.app/changelog/2025-05-01-mcp), and [Slack](https://github.com/modelcontextprotocol/servers-archived/tree/main/src/slack) MCP servers.
+This repository includes four working examples that demonstrate the framework's capabilities. It utilizes multiple 3rd party MCP servers including [Panther Security Monitoring](https://github.com/panther-labs/mcp-panther), [VirusTotal](https://github.com/BurtTheCoder/mcp-virustotal), [Github](https://github.com/github/github-mcp-server), [Linear](https://linear.app/changelog/2025-05-01-mcp), and [Slack](https://github.com/modelcontextprotocol/servers-archived/tree/main/src/slack) MCP servers.
 
 While these examples are cybersecurity focused, this framework can be used to build agents for any team such as those in product engineering or customer support.
 
@@ -48,7 +48,7 @@ Every Sunday, this agent reviews Linear tickets and projects for their team. It 
 
 **Claude Code excels at intelligent task orchestration.** It transforms high-level goals into detailed action plans, adapts when obstacles arise, and thinks critically through complex problems. With the right tools and clear instructions, it can automate workflows that would typically require hundreds of lines of custom code—making it the ideal MCP client for both technical and operational tasks.
 
-**MCP provides clean abstraction.** The Model Context Protocol creates a standardized way for AI to interact with external tools, making integrations as simple as configuration changes.
+**MCP makes tool integration effortless.** The Model Context Protocol creates a standardized way for AI to interact with external tools, making integrations as simple as configuration changes ([example](https://github.com/kpolley/easy-agents/pull/1))
 
 **Natural language is maintainable.** Your operational playbooks become your automation logic. Team members can easily understand, modify, and extend workflows without wrestling with complex code and 3rd party APIs.
 
