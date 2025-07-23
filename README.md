@@ -2,7 +2,7 @@
 
 ![Easy Agents](https://static.kpolley.com/easyagents.png)
 
-A novel approach to automation that replaces traditional scripting with advanced LLMs powered by natural language instructions and MCP tool-calling.
+A novel approach to automation that replaces traditional scripting with simple natural language instructions. powered by Claude Code and MCP tool-calling.
 
 ## Overview
 
