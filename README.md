@@ -2,7 +2,7 @@
 
 ![Easy Agents](https://static.kpolley.com/easyagents.png)
 
-A novel approach to automation that replaces traditional complex scripting with simple natural language. Powered by advanced LLMs and MCP.
+A novel approach to automation that replaces traditional scripting with simple natural language. Powered by advanced LLMs and MCP.
 
 ## Overview
 
