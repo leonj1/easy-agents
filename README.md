@@ -2,7 +2,7 @@
 
 ![Easy Agents](https://static.kpolley.com/easyagents.png)
 
-A novel approach to automation that replaces traditional scripting with simple natural language instructions. powered by Claude Code and MCP tool-calling.
+A novel approach to automation that replaces traditional scripting with simple natural language instructions. Powered by Claude Code and MCP tool-calling.
 
 ## Overview
 
@@ -88,6 +88,9 @@ Creating a new agent is as simple as:
 ### Creating Custom MCP Servers
 
 Extend your agent's capabilities by creating custom MCP servers with [FastMCP](https://github.com/jlowin/fastmcp). See [mcps/github_extended.py](mcps/github_extended.py) as an example.
+
+## Production Deployment
+See [DEPLOYMENT.md](./DEPLOYMENT.md) for guidance.
 
 ## Contributing
 
