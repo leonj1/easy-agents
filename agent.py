@@ -1,4 +1,4 @@
-from claude_code_sdk import query, ClaudeCodeOptions, Message
+from claude_agent_sdk import query, ClaudeAgentOptions, Message
 from typing import Optional
 import os
 from dotenv import load_dotenv
@@ -93,7 +93,7 @@ class Agent:
             if server in mcp_config["mcpServers"]
         }
         self.allowed_tools: Optional[list[str]] = allowed_tools
-        self._claude_code_options = ClaudeCodeOptions(
+        self._claude_agent_options = ClaudeAgentOptions(
             permission_mode="bypassPermissions",
             mcp_servers=self.mcp_servers,
             mcp_tools=self.allowed_tools,
@@ -103,7 +103,7 @@ class Agent:
     async def run(self) -> list[Message]:
         messages = []
         async for message in query(
-            prompt=self.prompt, options=self._claude_code_options
+            prompt=self.prompt, options=self._claude_agent_options
         ):
             print(message)
             messages.append(message)

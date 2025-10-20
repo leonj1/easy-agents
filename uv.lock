@@ -1,5 +1,5 @@
 version = 1
-revision = 2
+revision = 3
 requires-python = ">=3.13"
 
 [[package]]
@@ -120,15 +120,16 @@ wheels = [
 ]
 
 [[package]]
-name = "claude-code-sdk"
-version = "0.0.14"
+name = "claude-agent-sdk"
+version = "0.1.4"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "anyio" },
+    { name = "mcp" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/1b/50/489bd1cf9f448d9e06aa6af4a14db8e22ec5f7dbdb5fcc48821b1d8d1680/claude_code_sdk-0.0.14.tar.gz", hash = "sha256:a1c9384b6934c2b8351d7a35c0b7dcfd5fb657017fb456eb98bcf5e0b4f8eccd", size = 13403, upload-time = "2025-07-01T06:07:28.147Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/86/44/f470573bb13fc944955f73745cf96d4205c7e00571b0e4c6c66fb1c6c4ea/claude_agent_sdk-0.1.4.tar.gz", hash = "sha256:06472b1a30b5b7c189edd0b7456a6be72d21baa457977d10a4ef257f484c79b2", size = 48046, upload-time = "2025-10-15T21:35:06.28Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/db/a4/6eb606ccb0988054ca52b9453045b2c2f1bc6fd9c915e0f6cd1f73d6ce2c/claude_code_sdk-0.0.14-py3-none-any.whl", hash = "sha256:83a23a260954bb84e78cf2dc42aaaa0eee778ca392e56f1661276f31ba64992c", size = 10589, upload-time = "2025-07-01T06:07:27.029Z" },
+    { url = "https://files.pythonhosted.org/packages/99/3e/622ee6d7b9932a73a348381718bd3b8e8bdac457293538f4862ba1011223/claude_agent_sdk-0.1.4-py3-none-any.whl", hash = "sha256:4d81ec68dc357b995bfd9c8b904314a8b65fa1de2ef1740eac5e76314310d3f0", size = 35429, upload-time = "2025-10-15T21:35:04.915Z" },
 ]
 
 [[package]]
@@ -236,7 +237,7 @@ source = { virtual = "." }
 dependencies = [
     { name = "apscheduler" },
     { name = "asyncio" },
-    { name = "claude-code-sdk" },
+    { name = "claude-agent-sdk" },
     { name = "fastapi", extra = ["standard"] },
     { name = "fastmcp" },
     { name = "python-dotenv" },
@@ -252,7 +253,7 @@ dev = [
 requires-dist = [
     { name = "apscheduler", specifier = ">=3.11.0" },
     { name = "asyncio", specifier = ">=3.4.3" },
-    { name = "claude-code-sdk", specifier = ">=0.0.14" },
+    { name = "claude-agent-sdk", specifier = ">=0.0.14" },
     { name = "fastapi", extras = ["standard"], specifier = ">=0.116.0" },
     { name = "fastmcp", specifier = ">=2.10.4" },
     { name = "python-dotenv", specifier = ">=1.1.1" },

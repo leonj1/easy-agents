@@ -2,7 +2,7 @@
 
 ![Easy Agents](https://static.kpolley.com/easyagents.png)
 
-A novel approach to automation that replaces traditional scripting with simple natural language instructions. Powered by Claude Code and MCP tool-calling.
+A novel approach to automation that replaces traditional scripting with simple natural language instructions. Powered by Claude Agent SDK and MCP tool-calling.
 
 ## Overview
 
@@ -46,7 +46,7 @@ Every Sunday, this agent reviews Linear tickets and projects for their team. It 
 
 ## Why This Approach Works
 
-**Claude Code excels at intelligent task orchestration.** It transforms high-level goals into detailed action plans, adapts when obstacles arise, and thinks critically through complex problems. With the right tools and clear instructions, it can automate workflows that would typically require hundreds of lines of custom code—making it the ideal MCP client for both technical and operational tasks.
+**Claude Agent SDK excels at intelligent task orchestration.** It transforms high-level goals into detailed action plans, adapts when obstacles arise, and thinks critically through complex problems. With the right tools and clear instructions, it can automate workflows that would typically require hundreds of lines of custom code—making it the ideal MCP client for both technical and operational tasks.
 
 **MCP makes tool integration effortless.** The Model Context Protocol creates a standardized way for AI to interact with external tools, making integrations as simple as configuration changes ([example](https://github.com/kpolley/easy-agents/pull/1))
 

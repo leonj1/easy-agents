@@ -7,7 +7,7 @@ requires-python = ">=3.13"
 dependencies = [
     "apscheduler>=3.11.0",
     "asyncio>=3.4.3",
-    "claude-code-sdk>=0.0.14",
+    "claude-agent-sdk>=0.0.14",
     "fastapi[standard]>=0.116.0",
     "fastmcp>=2.10.4",
     "python-dotenv>=1.1.1",
